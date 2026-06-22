@@ -33,7 +33,7 @@ class Model:
         self.filldob()
 
     def getGraphDetails(self):
-        return len(self._graph.nodes), len(self._graph.edges)
+        return len(self._graph.nodes), len(self._graph.edges(data = True))
 
     def getYears(self):
         return DAO.getAllYears()
